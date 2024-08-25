@@ -28,7 +28,8 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
   const user = JSON.parse(localStorage.getItem("userDetails") || "{}");
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:5000");
+    const socket = new WebSocket("wss://secure-messaging-app-be.onrender.com");
+
     setWs(socket);
 
     socket.onmessage = (event) => {
