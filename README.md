@@ -1,23 +1,27 @@
-# Getting Started with Create React App
+# Secure Messaging Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a secure messaging web app built using ReactJS, and Typescript. The app features user registration and authentication using JWT with private/public key cryptography, real-time messaging using WebSockets, and encrypted storage for messages.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Registration and Authentication**: Users can sign up with a name, email, and password. Existing users can log in using email and password. JWT is used for authentication.
+- **Contact Management**: Users can view their contacts in a sidebar and start or continue chat sessions.
+- **Real-Time Messaging**: Messages are transported in real-time using WebSockets.
+- **Message Encryption**: Messages are stored encrypted using symmetric encryption.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Follow these steps to run the app locally:
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/reemanshi0794/secure-messaging-app.git
+npm i
+npm start
+
 
 ### `npm run build`
 
